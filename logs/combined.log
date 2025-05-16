@@ -1,0 +1,29 @@
+{"level":"info","message":"Navigating to login page","timestamp":"2025-05-16T06:12:42.974Z"}
+{"level":"info","message":"Page loaded with state: networkidle","timestamp":"2025-05-16T06:12:46.800Z"}
+{"level":"info","message":"Successfully navigated to login page","timestamp":"2025-05-16T06:12:46.801Z"}
+{"level":"info","message":"Starting login process","timestamp":"2025-05-16T06:12:46.803Z"}
+{"level":"info","message":"Navigating to login page","timestamp":"2025-05-16T06:12:46.804Z"}
+{"level":"info","message":"Page loaded with state: networkidle","timestamp":"2025-05-16T06:12:49.478Z"}
+{"level":"info","message":"Successfully navigated to login page","timestamp":"2025-05-16T06:12:49.480Z"}
+{"level":"info","message":"Clicking email login option","timestamp":"2025-05-16T06:12:49.481Z"}
+{"level":"info","message":"Element found: #btnLoginWithEmail","timestamp":"2025-05-16T06:12:49.602Z"}
+{"level":"info","message":"Clicked element: #btnLoginWithEmail","timestamp":"2025-05-16T06:12:49.747Z"}
+{"level":"info","message":"Entering email","timestamp":"2025-05-16T06:12:49.748Z"}
+{"level":"info","message":"Element found: #txtEmail","timestamp":"2025-05-16T06:12:49.793Z"}
+{"level":"info","message":"Typed text into element: #txtEmail","timestamp":"2025-05-16T06:12:49.830Z"}
+{"level":"info","message":"Clicking initial login button","timestamp":"2025-05-16T06:12:49.831Z"}
+{"level":"info","message":"Element found: button[aria-labelledby=\"login or register\"]","timestamp":"2025-05-16T06:12:49.858Z"}
+{"level":"info","message":"Clicked element: button[aria-labelledby=\"login or register\"]","timestamp":"2025-05-16T06:12:49.993Z"}
+{"level":"info","message":"Waiting for welcome message","timestamp":"2025-05-16T06:12:49.994Z"}
+{"level":"info","message":"Element found: h1.title-primary","timestamp":"2025-05-16T06:12:50.018Z"}
+{"level":"info","message":"Entering password","timestamp":"2025-05-16T06:12:50.020Z"}
+{"level":"info","message":"Element found: #txtPassword","timestamp":"2025-05-16T06:12:51.386Z"}
+{"level":"info","message":"Typed text into element: #txtPassword","timestamp":"2025-05-16T06:12:51.404Z"}
+{"level":"info","message":"Clicking submit button","timestamp":"2025-05-16T06:12:51.405Z"}
+{"level":"info","message":"Element found: #btnSubmitPassword","timestamp":"2025-05-16T06:12:51.420Z"}
+{"level":"info","message":"Clicked element: #btnSubmitPassword","timestamp":"2025-05-16T06:12:51.488Z"}
+{"level":"info","message":"Login process completed successfully","timestamp":"2025-05-16T06:12:51.489Z"}
+{"level":"info","message":"Element found: h2.title","timestamp":"2025-05-16T06:13:00.244Z"}
+{"level":"info","message":"Element found: h2.title","timestamp":"2025-05-16T06:13:00.261Z"}
+{"level":"info","message":"Got text from element: h2.title","timestamp":"2025-05-16T06:13:00.269Z"}
+{"level":"info","message":"Element found: h2.product-item__brand","timestamp":"2025-05-16T06:13:02.881Z"}

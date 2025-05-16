@@ -1,0 +1,43 @@
+name: E-bebek Test Automation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Install Playwright browsers
+      run: npx playwright install --with-deps
+      
+    - name: Create .env file
+      run: |
+        echo "EBEBEK_EMAIL=${{ secrets.EBEBEK_EMAIL }}" >> .env
+        echo "EBEBEK_PASSWORD=${{ secrets.EBEBEK_PASSWORD }}" >> .env
+      
+    - name: Run tests
+      run: npm test
+      
+    - name: Upload test results and logs
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results-and-logs
+        path: |
+          cucumber-report.json
+          cucumber-report.html
+          logs/ 
