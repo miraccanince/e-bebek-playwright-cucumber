@@ -10,6 +10,7 @@ This project contains automated tests for the e-bebek website using Playwright a
 - Logout functionality
 - CI/CD integration with GitHub Actions
 - **Robust error handling and logging** (see logs in the `logs/` directory)
+- **Automatic screenshots** on test failures and errors
 
 ## Prerequisites
 
@@ -57,6 +58,7 @@ npx playwright install
 ├── utils/                    # Utility modules (logger)
 │   └── logger.js             # Winston logger configuration
 ├── logs/                     # Log files (error.log, combined.log)
+├── screenshots/              # Screenshots of test failures and errors
 └── .github/workflows/        # CI/CD configuration
     └── test.yml             # GitHub Actions workflow
 ```
@@ -76,6 +78,17 @@ npm test
   - `logs/error.log` for errors
   - `logs/combined.log` for all logs
 - Console output is colorized for easier local debugging.
+
+## Screenshots
+
+- Screenshots are automatically taken when:
+  - An element is not found
+  - A click action fails
+  - Text input fails
+  - Page load state fails
+  - Any other error occurs
+- Screenshots are saved in the `screenshots/` directory with timestamps
+- Screenshots are included in CI artifacts for debugging
 
 ## Test Scenarios
 
@@ -106,8 +119,7 @@ The project includes GitHub Actions workflow that:
 - Sets up Node.js environment
 - Installs dependencies
 - Runs tests
-- Uploads test results as artifacts
-- **Collects logs as artifacts for debugging**
+- Uploads test results, logs, and screenshots as artifacts
 
 ## Configuration
 
@@ -126,4 +138,4 @@ The test configuration can be found in:
 - Tests run in headed mode for local development
 - CI runs in headless mode
 - Default timeout is set to 30 seconds
-- Test results and logs are available as artifacts in GitHub Actions 
+- Test results, logs, and screenshots are available as artifacts in GitHub Actions 
